@@ -1,0 +1,36 @@
+/** ShredLedger brand palette — keep in sync with src/index.css */
+export const theme = {
+  brandNavy: '#0a1628',
+  primary: '#39b0db',
+  primaryTint: '#4db8df',
+  primaryShade: '#329bc1',
+  secondary: '#205e75',
+  secondaryTint: '#366e85',
+  itemBackground: '#142f3c',
+  surfaceLight: '#1a3340',
+  textPrimary: '#ffffff',
+  textMuted: '#8ba8b8',
+  boardBg: '#1a3340',
+  nutColor: '#205e75',
+  fretColor: '#366e85',
+  stringColor: '#4db8df',
+  noteDot: '#39b0db',
+  rootDot: '#ffffff',
+  rootDotBorder: '#39b0db',
+  openColor: '#2dd36f',
+  mutedColor: '#eb445a',
+} as const;
+
+export const cssVarMap: Record<string, string> = {
+  'var(--board-bg)': theme.boardBg,
+  'var(--nut-color)': theme.nutColor,
+  'var(--fret-color)': theme.fretColor,
+  'var(--string-color)': theme.stringColor,
+  'var(--text-primary)': theme.textPrimary,
+  'var(--text-muted)': theme.textMuted,
+  'var(--note-dot)': theme.noteDot,
+  'var(--root-dot)': theme.rootDot,
+  'var(--root-dot-border)': theme.rootDotBorder,
+  'var(--open-color)': theme.openColor,
+  'var(--muted-color)': theme.mutedColor,
+};
